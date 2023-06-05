@@ -1,0 +1,70 @@
+:root{
+    --root-font: 12px
+}
+body {
+  margin:0 auto;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  margin: 5px 5px 5px 5px;
+  color: black;
+  height: 100%;
+  font-size: 1.2rem;
+  display: block;
+  }
+.header {
+  background-color: darkslategrey;
+  height: 50px;
+}
+.navbar {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 0;
+  display: block;
+  justify-content: space-between;
+}
+
+
+.navbar ul {
+  width: 40%;
+  float: right;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 3px 5px 3px;
+  background-color: darkslategray;
+}
+
+.navbar ul li:hover {
+  background-color: dimgray;
+}
+
+.navbar button {
+  float: right;
+  margin-right: 15px;
+}
+.menu{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar button {
+    display: none;
+    margin: auto;
+  }
+
+  .navbar {
+    display: flex;
+    width: 80%;
+  }
+
+  .navbar ul {
+    display: flex;
+    margin: 0 auto;
+  }
+  .navbar ul li {
+    margin: 0;
+  }
+}
