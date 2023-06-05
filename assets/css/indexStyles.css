@@ -1,8 +1,8 @@
-:root{
-    --root-font: 12px
+:root {
+  --root-font: 12px;
 }
 body {
-  margin:0 auto;
+  margin: 0 auto;
   font-size: 12px;
 }
 a {
@@ -12,9 +12,9 @@ a {
   height: 100%;
   font-size: 1.2rem;
   display: block;
-  }
+}
 .header {
-  background-color: darkslategrey;
+  background-color: transparent;
   height: 50px;
 }
 .navbar {
@@ -22,37 +22,48 @@ a {
   height: 100%;
   margin: auto;
   margin-top: 0;
-  display: block;
+  display: flex;
   justify-content: space-between;
 }
 
-
-.navbar ul {
+.menu {
+  display: none;
   width: 40%;
-  float: right;
+  top: 20px;
+  margin-top: 50px;
 }
 .navbar ul li {
   list-style: none;
-  padding: 3px 5px 3px;
-  background-color: darkslategray;
+  padding: 3px 5px 1px 5px;
+  background-color: transparent;
 }
 
 .navbar ul li:hover {
-  background-color: dimgray;
+  border-bottom: 2px solid skyblue;
 }
 
-.navbar button {
+.menu-btn {
   float: right;
-  margin-right: 15px;
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  padding: 3px;
+  margin: 2px;
+  background-color: transparent;
+  border: 1.2px solid black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 3px;
 }
-.menu{
-    display: none;
+
+.menu-btn:hover {
+    background-color: black;
+    color: white;
 }
 
 @media only screen and (min-width: 600px) {
-  .navbar button {
+  .menu-btn {
     display: none;
-    margin: auto;
   }
 
   .navbar {
