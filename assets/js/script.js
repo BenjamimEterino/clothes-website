@@ -7,3 +7,7 @@ function changeDisplay(list) {
         menu.style.display="block"
     }
 }
+
+function changeButton(x) {
+    x.classList.toggle("change");
+  }

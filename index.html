@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/indexStyles.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/Header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
     <title>King of Dress</title>
   </head>
   <body>
@@ -16,9 +23,34 @@
           <li><a href="" class="nav-link">Sobre</a></li>
           <li><a href="" class="nav-link">Contacto</a></li>
         </ul>
+
+        <div
+          class="button-container"
+          onclick="changeButton(this), changeDisplay('menu')"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </nav>
-      
-      <button class="menu-btn" onclick="changeDisplay('menu')">Menu</button>
+    </div>
+
+    <div class="banner">
+      <img
+        src="./assets/images/banner-img-md.jpg"
+        alt="clothes image"
+        class="banner-img"
+      />
+
+      <div class="banner-cover">
+        <h1 class="banner-title">Kings of dress</h1>
+        <p class="banner-text">Faça compras connosco e vista-se como um rei.</p>
+        <p class="banner-text">
+          Numa época em que a sua imagem contribui para o seu sucesso, nada
+          melhor que ter um lugar onde possa se vestir da melhor maneira ao
+          preço que cabe no seu bolso.
+        </p>
+      </div>
     </div>
 
     <script src="./assets/js/script.js"></script>
