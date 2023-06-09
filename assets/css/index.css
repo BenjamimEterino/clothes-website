@@ -1,11 +1,16 @@
 :root {
   --root-font: 12px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0 auto;
   font-size: 12px;
-  overflow: hidden;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -34,31 +39,87 @@ a {
   padding: 0 10px;
   border-radius: 4px;
 }
-.banner-text, .banner-title {
+.banner-text,
+.banner-title {
   color: #fff;
   opacity: 1;
- 
 }
 .banner-title {
   font-size: 15px;
   text-transform: uppercase;
 }
 .banner-text {
-  font-weight: 900;
+  font-weight: 500;
+}
+.separator {
+  height: 45vw;
 }
 
+.slider {
+  display: flex;
+}
+.slider-img {
+  width: 90%;
+  min-width: 350px;
+  overflow: hidden;
+}
+
+.subtitle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.subtitle {
+  text-transform: uppercase;
+}
+
+.animated-text {
+  max-width: 100%;
+  height: 400px;
+  background: url(../images/wt-jeans.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foreground-text {
+  font-size: larger;
+  text-transform: uppercase;
+}
 
 @media only screen and (min-width: 600px) {
-  .banner-cover{
-    width: 60%;
+  .banner-cover {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .banner {
+    max-height: 500px;
+    width: 100vw;
+  }
+  .banner-img {
+    max-height: 500px;
+  }
+  .banner-cover {
+    top: 30%;
   }
   .banner-title {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     font-size: 24px;
+    margin-top: 10px;
   }
   .banner-text {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .banner-cover {
+    width: 50%;
   }
 }
