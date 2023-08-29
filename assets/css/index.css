@@ -85,8 +85,98 @@ a {
 }
 
 .foreground-text {
-  font-size: larger;
+  font-size: 30px;
   text-transform: uppercase;
+}
+
+.owl-prev {
+  background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938188/left-arrow_rlxamy.png') left center no-repeat;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.owl-next {
+  background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938220/right-arrow_zwe9sf.png') right center no-repeat;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  opacity: 0.5;
+}
+
+
+/* Owl Carousel */
+
+
+/* Popup Text */
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.popup-text {
+  display: table;
+}
+.popup-text p {
+  margin-bottom: 10px;
+}
+.popup-text span {
+  font-weight: bold;
+  float: right;
+}
+/* Popup Text */
+
+/* Icon CSS */
+.item {
+  position: relative;
+}
+.item i {
+  display: none;
+  font-size: 4rem;
+  color: #FFF;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.item a {
+  display: block;
+  width: 100%;
+}
+.item a:hover:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.item a:hover i {
+  display: block;
+  z-index: 2;
 }
 
 @media only screen and (min-width: 600px) {
@@ -97,11 +187,11 @@ a {
 
 @media only screen and (min-width: 600px) {
   .banner {
-    max-height: 500px;
+    max-height: 600px;
     width: 100vw;
   }
   .banner-img {
-    max-height: 500px;
+    max-height: 600px;
   }
   .banner-cover {
     top: 30%;
@@ -116,10 +206,17 @@ a {
   .banner-text {
     font-size: 20px;
   }
+  .foreground-text{
+    font-size: 50px;
+    font-weight: bolder;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   .banner-cover {
     width: 50%;
+  }
+  .foreground-text {
+    font-size: 80px;
   }
 }
